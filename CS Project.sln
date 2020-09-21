@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2094592D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEMO", "DEMO\DEMO.csproj", "{0669F62B-C965-4437-8C40-387F3A29E51C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 .September", "1 .September", "{F57724C2-1D5D-4C5A-9CF9-67F308A8FFC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form_Memo", "Form_Memo\Form_Memo.csproj", "{DD51656D-5773-45BA-93AF-77DE2E9A39A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{0669F62B-C965-4437-8C40-387F3A29E51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0669F62B-C965-4437-8C40-387F3A29E51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0669F62B-C965-4437-8C40-387F3A29E51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD51656D-5773-45BA-93AF-77DE2E9A39A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD51656D-5773-45BA-93AF-77DE2E9A39A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD51656D-5773-45BA-93AF-77DE2E9A39A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD51656D-5773-45BA-93AF-77DE2E9A39A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0669F62B-C965-4437-8C40-387F3A29E51C} = {2094592D-611B-4B7B-A8B9-FC770D04FA1B}
+		{DD51656D-5773-45BA-93AF-77DE2E9A39A3} = {F57724C2-1D5D-4C5A-9CF9-67F308A8FFC9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B259FCA0-AE36-40EA-BA90-85AAE6F1A8BA}
