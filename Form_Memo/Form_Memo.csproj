@@ -84,10 +84,33 @@
     <Content Include="RES\Back.jpg" />
     <Content Include="RES\divo_1.jpg" />
     <Content Include="RES\divo_2.jpg" />
+    <None Include="RES\load.jpg" />
+    <Content Include="RES\mario.mp3" />
+    <Content Include="RES\mariowav.wav" />
     <Content Include="RES\Phantom_1.jpg" />
     <Content Include="RES\Phantom_2.jpg" />
+    <Content Include="RES\PO.jpeg" />
     <Content Include="RES\supra_1.jpeg" />
     <Content Include="RES\supra_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

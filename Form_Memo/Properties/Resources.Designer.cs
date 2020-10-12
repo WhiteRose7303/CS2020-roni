@@ -93,6 +93,16 @@ namespace Form_Memo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap load {
+            get {
+                object obj = ResourceManager.GetObject("load", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Phantom_1 {
             get {
                 object obj = ResourceManager.GetObject("Phantom_1", resourceCulture);
@@ -106,6 +116,16 @@ namespace Form_Memo.Properties {
         internal static System.Drawing.Bitmap Phantom_2 {
             get {
                 object obj = ResourceManager.GetObject("Phantom_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PO {
+            get {
+                object obj = ResourceManager.GetObject("PO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
