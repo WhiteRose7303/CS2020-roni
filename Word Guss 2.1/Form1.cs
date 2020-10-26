@@ -17,42 +17,44 @@ namespace Word_Guss_2._1
             InitializeComponent();
         }
         private int m_CurrentLabelLetter = 1;
+        private string m_WordToGuess = "";
 
         private void button_Letter_Click(object sender, EventArgs e)
         {
             string buttonText = (sender as Button).Text;
-            switch (m_CurrentLabelLetter)
-            {
-                case 1:
-                    {
-                        label_Letter1.Text = buttonText;
-                        break;
-                    }
-                case 2:
-                    {
-                        label_Letter2.Text = buttonText;
-                        break;
-                    }
-                case 3:
-                    {
-                        label_Letter3.Text = buttonText;
-                        break;
-                    }
-                case 4:
-                    {
-                        label_Letter4.Text = buttonText;
-                        break;
-                    }
-                case 5:
-                    {
-                        label_Letter5.Text = buttonText;
-                        break;
-                    }
-
-            }
+            groupBox2.Controls["label_Letter" + m_CurrentLabelLetter].Text = buttonText;
+           
             m_CurrentLabelLetter++;
+            if (m_CurrentLabelLetter == 6)
+                button_OK.Enabled = true;
+           
         }
 
+        private void button27_Click(object sender, EventArgs e)
+        {
+            if (m_CurrentLabelLetter > 1)
+                groupBox2.Controls["label_Letter" + (m_CurrentLabelLetter - 1)].Text = "_";
+            m_CurrentLabelLetter--;
+            button_OK.Enabled = false;
+
+        }
+
+        private void button_OK_Click(object sender, EventArgs e)
+        {
+            Label curLabel;
+
+            for (int i = 1; i <= 5; i++)
+            {
+                curLabel = groupBox2.Controls["label_Letter" + i] as Label; m_WordToGuess += curLabel.Text;
+                curLabel.Text = "_";
+            }
+
+            button27.Visible = false;
+            button_OK.Visible = false;
+
+
+
+        }
     }
 
 
