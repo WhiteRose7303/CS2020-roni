@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8B8D85DF-02D1-491E-9DA0-0B918A4D3D49}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Word_Guss_2._1</RootNamespace>
+    <RootNamespace>Word_Guss_2</RootNamespace>
     <AssemblyName>Word Guss 2.1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -58,7 +58,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
+      <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
