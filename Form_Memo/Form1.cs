@@ -79,6 +79,7 @@ namespace Form_Memo
             {
                 Swap(i, rnd.Next(CARD_NUMBER));
             }
+          
         }
         
         private void pictureBox_Card_Click(object sender, EventArgs e)
@@ -175,5 +176,10 @@ namespace Form_Memo
         }
 
         WindowsMediaPlayer player = new WindowsMediaPlayer();
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

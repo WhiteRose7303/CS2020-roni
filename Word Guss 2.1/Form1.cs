@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,9 +17,21 @@ namespace Word_Guss_2._1
         {
             InitializeComponent();
         }
+
         private int m_CurrentLabelLetter = 1;
         private string m_WordToGuess = "";
+        private Image[] m_Images = new Image[5];
 
+        public void SetImagesArray()
+        {
+            //מציבה תמונות בכל תאי מערך התמונות 
+            m_Images[0] = Resources.p1;
+            m_Images[1] = Resources.p2;
+            m_Images[2] = Resources.p3;
+            m_Images[3] = Resources.p4;
+            m_Images[4] = Resources.p5;
+            m_Images[5] = Resources.p6;
+        }
         private void button_Letter_Click(object sender, EventArgs e)
         {
             string buttonText = (sender as Button).Text;
@@ -52,10 +65,13 @@ namespace Word_Guss_2._1
             button27.Visible = false;
             button_OK.Visible = false;
 
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }
-
+    
 
 }
