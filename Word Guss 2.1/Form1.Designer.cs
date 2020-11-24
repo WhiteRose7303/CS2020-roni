@@ -30,8 +30,9 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Looser = new System.Windows.Forms.Button();
             this.button_OK = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.Del = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
@@ -82,8 +83,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Bisque;
+            this.groupBox1.Controls.Add(this.Looser);
             this.groupBox1.Controls.Add(this.button_OK);
-            this.groupBox1.Controls.Add(this.button27);
+            this.groupBox1.Controls.Add(this.Del);
             this.groupBox1.Controls.Add(this.button26);
             this.groupBox1.Controls.Add(this.button25);
             this.groupBox1.Controls.Add(this.button24);
@@ -117,6 +119,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Keyborad ";
             // 
+            // Looser
+            // 
+            this.Looser.Location = new System.Drawing.Point(162, 241);
+            this.Looser.Name = "Looser";
+            this.Looser.Size = new System.Drawing.Size(658, 23);
+            this.Looser.TabIndex = 31;
+            this.Looser.Text = "I\'m A Losser";
+            this.Looser.UseVisualStyleBackColor = true;
+            this.Looser.Click += new System.EventHandler(this.Looser_Click);
+            // 
             // button_OK
             // 
             this.button_OK.Location = new System.Drawing.Point(907, 241);
@@ -127,15 +139,15 @@
             this.button_OK.UseVisualStyleBackColor = true;
             this.button_OK.Click += new System.EventHandler(this.button_OK_Click);
             // 
-            // button27
+            // Del
             // 
-            this.button27.Location = new System.Drawing.Point(826, 241);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 23);
-            this.button27.TabIndex = 29;
-            this.button27.Text = "Del";
-            this.button27.UseVisualStyleBackColor = true;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
+            this.Del.Location = new System.Drawing.Point(826, 241);
+            this.Del.Name = "Del";
+            this.Del.Size = new System.Drawing.Size(75, 23);
+            this.Del.TabIndex = 29;
+            this.Del.Text = "Del";
+            this.Del.UseVisualStyleBackColor = true;
+            this.Del.Click += new System.EventHandler(this.Del_Click);
             // 
             // button26
             // 
@@ -467,7 +479,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hadar Ovadia And Daniel Basik";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -513,7 +525,8 @@
         private System.Windows.Forms.Label label_Letter3;
         private System.Windows.Forms.Label label_Letter2;
         private System.Windows.Forms.Button button_OK;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button Del;
+        private System.Windows.Forms.Button Looser;
     }
 }
 
