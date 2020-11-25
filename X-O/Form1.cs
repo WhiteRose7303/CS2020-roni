@@ -145,6 +145,7 @@ namespace X_O
                 }
 
                 checkwin();
+                checkeq();
             }
 
         }
@@ -250,6 +251,7 @@ namespace X_O
                     filled[8] = true;
                 }
                 checkwin();
+                checkeq();
             }
         }
 
@@ -329,6 +331,23 @@ namespace X_O
                 won2();
             }
 
+        }
+
+        private void checkeq()
+        {
+            int num = 0;
+            for (int i = 0; i < filled.Length; i++)
+            {
+                if (filled[i] == true)
+                {
+                    num++;
+                }
+            }
+            if (num == 0)
+            {
+                MessageBox.Show("Its A Tie!");
+                this.Close();
+            }
         }
     
         private void won1()
