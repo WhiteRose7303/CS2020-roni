@@ -21,8 +21,7 @@ namespace X_O
         private static bool Isfirst = true;
         private int[,] Matboard = new int[3, 3];
         private bool[] filled = new bool[9];
-        
-
+ 
         //Exit
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -260,78 +259,90 @@ namespace X_O
             //hori
             if((Matboard[0,0]==1)&& (Matboard[0, 1] == 1)&& (Matboard[0, 2] == 1))
             {
-                Player.Text = "1 won";
+                won1();
             }
             if ((Matboard[1, 0] == 1) && (Matboard[1, 1] == 1) && (Matboard[1, 2] == 1))
             {
-                Player.Text = "1 won";
+                won1();
             }
             if ((Matboard[2, 0] == 1) && (Matboard[2, 1] == 1) && (Matboard[2, 2] == 1))
             {
-                Player.Text = "1 won";
+                won1();
             }
             //verti
             if ((Matboard[0, 0] == 1) && (Matboard[1, 0] == 1) && (Matboard[2, 0] == 1))
             {
-                Player.Text = "1 won";
+                won1();
             }
             if ((Matboard[0, 1] == 1) && (Matboard[1, 1] == 1) && (Matboard[2, 1] == 1))
             {
-                Player.Text = "1 won";
+                won1();
             }
             if ((Matboard[0, 2] == 1) && (Matboard[1, 2] == 1) && (Matboard[2, 2] == 1))
             {
-                Player.Text = "1 won";
+                won1();
             }
             //diag
             if ((Matboard[0, 0] == 1) && (Matboard[1, 1] == 1) && (Matboard[2, 2] == 1))
             {
-                Player.Text = "1 won";
+                won1();
             }
             if ((Matboard[2, 1] == 1) && (Matboard[1, 1] == 1) && (Matboard[0, 2] == 1))
             {
-                Player.Text = "1 won";
+                won1();
             }
 
             //for 2
             //hori
             if ((Matboard[0, 0] == 2) && (Matboard[0, 1] == 2) && (Matboard[0, 2] == 2))
             {
-                Player.Text = "2 won";
+                won2();
             }
             if ((Matboard[1, 0] == 2) && (Matboard[1, 1] == 2) && (Matboard[1, 2] == 2))
             {
-                Player.Text = "2 won";
+                won2();
             }
             if ((Matboard[2, 0] == 2) && (Matboard[2, 1] == 2) && (Matboard[2, 2] == 2))
             {
-                Player.Text = "2 won";
+                won2();
             }
             //verti
             if ((Matboard[0, 0] == 2) && (Matboard[1, 0] == 2) && (Matboard[2, 0] == 2))
             {
-                Player.Text = "2 won";
+                won2();
             }
             if ((Matboard[0, 1] == 2) && (Matboard[1, 1] == 2) && (Matboard[2, 1] == 2))
             {
-                Player.Text = "2 won";
+                won2();
             }
             if ((Matboard[0, 2] == 2) && (Matboard[1, 2] == 2) && (Matboard[2, 2] == 2))
             {
-                Player.Text = "2 won";
+                won2();
             }
             //diag
             if ((Matboard[0, 0] == 2) && (Matboard[1, 1] == 2) && (Matboard[2, 2] == 2))
             {
-                Player.Text = "2 won";
+                won2();
             }
             if ((Matboard[2, 1] == 2) && (Matboard[1, 1] == 2) && (Matboard[0, 2] == 2))
             {
-                Player.Text = "2 won";
+                won2();
             }
 
         }
-        
+    
+        private void won1()
+        {
+            form_win1 form_win1 = new form_win1();
+            form_win1.ShowDialog();
+            this.Close();
+        }
+        private void won2()
+        {
+            form_win2 form_win2 = new form_win2();
+            form_win2.ShowDialog();
+            this.Close();
+        }
 
     }
 }
