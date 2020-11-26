@@ -12,7 +12,7 @@ using X_O.Properties;
 namespace X_O
 {
     public partial class Form1 : Form
-    {
+    {   
         public Form1()
         {
             InitializeComponent();
@@ -343,7 +343,7 @@ namespace X_O
                     num++;
                 }
             }
-            if (num == 0)
+            if (num == 9)
             {
                 MessageBox.Show("Its A Tie!");
                 this.Close();
