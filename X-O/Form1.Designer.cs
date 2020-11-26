@@ -189,7 +189,7 @@
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Board);
             this.Name = "Form1";
-            this.Text = "Hadar , ";
+            this.Text = "Hadar , Ron";
             ((System.ComponentModel.ISupportInitialize)(this.BR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BM)).EndInit();

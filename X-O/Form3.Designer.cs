@@ -61,7 +61,7 @@
             this.Controls.Add(this.Close);
             this.Controls.Add(this.pictureBox1);
             this.Name = "form_win2";
-            this.Text = "Form3";
+            this.Text = "Congratz";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
