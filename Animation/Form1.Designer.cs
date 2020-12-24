@@ -414,7 +414,7 @@
             this.Controls.Add(this.pictureBox1);
             this.KeyPreview = true;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hadar";
             ((System.ComponentModel.ISupportInitialize)(this.meida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.santa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

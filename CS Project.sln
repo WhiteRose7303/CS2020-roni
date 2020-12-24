@@ -23,10 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. December", "4. December"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation", "Animation\Animation.csproj", "{5D42C4FC-7F85-4FE3-A033-848061037C70}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reso", "Reso", "{1E924403-FC45-45AC-B72C-42E1C0526F2B}"
-	ProjectSection(SolutionItems) = preProject
-		Animation\Reso\Tree.png = Animation\Reso\Tree.png
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simon", "Simon\Simon.csproj", "{DAF29CCC-40C5-4D87-9BB5-26F588CFE83A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +51,10 @@ Global
 		{5D42C4FC-7F85-4FE3-A033-848061037C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D42C4FC-7F85-4FE3-A033-848061037C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D42C4FC-7F85-4FE3-A033-848061037C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF29CCC-40C5-4D87-9BB5-26F588CFE83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF29CCC-40C5-4D87-9BB5-26F588CFE83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF29CCC-40C5-4D87-9BB5-26F588CFE83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF29CCC-40C5-4D87-9BB5-26F588CFE83A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,7 +65,7 @@ Global
 		{8B8D85DF-02D1-491E-9DA0-0B918A4D3D49} = {037699A9-697A-4722-BF4B-402ED646D6EA}
 		{3F1044DC-61A2-4F22-BB04-5C9DCB20DE5A} = {62E50B32-A152-4088-9F6D-547ECFD12698}
 		{5D42C4FC-7F85-4FE3-A033-848061037C70} = {85B3304D-9C5B-478D-9D9A-6CAD9ECBA4F8}
-		{1E924403-FC45-45AC-B72C-42E1C0526F2B} = {85B3304D-9C5B-478D-9D9A-6CAD9ECBA4F8}
+		{DAF29CCC-40C5-4D87-9BB5-26F588CFE83A} = {85B3304D-9C5B-478D-9D9A-6CAD9ECBA4F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B259FCA0-AE36-40EA-BA90-85AAE6F1A8BA}
