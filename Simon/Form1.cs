@@ -15,7 +15,8 @@ namespace Simon
         public Form1()
         {
             InitializeComponent();
-            
+            MessageBox.Show("Please type the amount of stages you want in the text box...");
+
         }
         //the Amount in this turn
         int AmountToPlay = 1;
@@ -53,12 +54,19 @@ namespace Simon
 
         private void Start_Click(object sender, EventArgs e)
         {
-            turns = int.Parse(Stage.Text);
-            rndArray = new int[calcstage(turns)];
-            Stage.Enabled = false;
-            Brnd();
-            Game.Start();
-            playarr = new string[AmountToPlay];
+            if (Stage.Text == "")
+            {
+                MessageBox.Show("Please type the amount of stages you want in the text box...");
+            }
+            else
+            {
+                turns = int.Parse(Stage.Text);
+                rndArray = new int[calcstage(turns)];
+                Stage.Enabled = false;
+                Brnd();
+                Game.Start();
+                playarr = new string[AmountToPlay];
+            }
         }
 
         private void Game_Tick(object sender, EventArgs e)
