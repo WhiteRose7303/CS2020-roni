@@ -35,19 +35,22 @@
             this.Close = new System.Windows.Forms.Button();
             this.Start = new System.Windows.Forms.Button();
             this.Reset = new System.Windows.Forms.Button();
-            this.GameTime = new System.Windows.Forms.Timer(this.components);
+            this.ResetTime = new System.Windows.Forms.Timer(this.components);
             this.HighScores = new System.Windows.Forms.ListBox();
             this.Name = new System.Windows.Forms.TextBox();
             this.Enter = new System.Windows.Forms.Button();
             this.TimeBox = new System.Windows.Forms.TextBox();
+            this.Timesetbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.WordSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // WordSearch
             // 
+            this.WordSearch.Image = global::CrossWord.Properties.Resources.Crossword;
             this.WordSearch.Location = new System.Drawing.Point(596, 0);
             this.WordSearch.Name = "WordSearch";
-            this.WordSearch.Size = new System.Drawing.Size(1195, 817);
+            this.WordSearch.Size = new System.Drawing.Size(958, 609);
+            this.WordSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.WordSearch.TabIndex = 0;
             this.WordSearch.TabStop = false;
             // 
@@ -95,10 +98,12 @@
             this.Reset.TabIndex = 3;
             this.Reset.Text = "Reset";
             this.Reset.UseVisualStyleBackColor = true;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
-            // GameTime
+            // ResetTime
             // 
-            this.GameTime.Interval = 60000;
+            this.ResetTime.Interval = 1000;
+            this.ResetTime.Tick += new System.EventHandler(this.ResetTime_Tick);
             // 
             // HighScores
             // 
@@ -136,11 +141,21 @@
             this.TimeBox.TabIndex = 2;
             this.TimeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // Timesetbox
+            // 
+            this.Timesetbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Timesetbox.Location = new System.Drawing.Point(341, 531);
+            this.Timesetbox.Name = "Timesetbox";
+            this.Timesetbox.Size = new System.Drawing.Size(201, 44);
+            this.Timesetbox.TabIndex = 4;
+            this.Timesetbox.Text = "Insert time";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1792, 817);
+            this.ClientSize = new System.Drawing.Size(1556, 817);
+            this.Controls.Add(this.Timesetbox);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.Enter);
             this.Controls.Add(this.Start);
@@ -153,7 +168,7 @@
             this.Controls.Add(this.WordSearch);
             this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.WordSearch)).EndInit();
             this.ResumeLayout(false);
@@ -169,11 +184,12 @@
         private System.Windows.Forms.Button Close;
         private System.Windows.Forms.Button Start;
         private System.Windows.Forms.Button Reset;
-        private System.Windows.Forms.Timer GameTime;
+        private System.Windows.Forms.Timer ResetTime;
         private System.Windows.Forms.ListBox HighScores;
         private System.Windows.Forms.TextBox Name;
         private System.Windows.Forms.Button Enter;
         private System.Windows.Forms.TextBox TimeBox;
+        private System.Windows.Forms.TextBox Timesetbox;
     }
 }
 
