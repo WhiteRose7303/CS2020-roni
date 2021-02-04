@@ -120,4 +120,8 @@
   <metadata name="ResetTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>To start the game write your name up at the top and insert the amount of time you want in the time box. when you are finished, press start
+the objective of the game is to find all words in the puzzle on your right at a given time.</value>
+  </data>
 </root>

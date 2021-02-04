@@ -23,6 +23,8 @@ namespace CrossWord
         private string[] High = new string[1000];
         private int total = 59;
         private int time = 1;
+        
+        
 
         public Form1()
         {
